@@ -1,3 +1,3 @@
 # kaggle-competitions
 Kaggle competitions notebooks
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]((https://colab.research.google.com/github/nbonillav/kaggle-competitions/quickview/blob/master/titanic-projectv2.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nbonillav/kaggle-competitions/quickview/blob/master/titanic-projectv2.ipynb)
