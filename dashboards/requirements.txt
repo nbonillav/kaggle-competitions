@@ -1,0 +1,14 @@
+streamlit
+Version: 1.55.0
+
+pandas
+Version: 2.3.3
+
+numpy
+Version: 2.2.6
+
+scikit-learn
+Version 1.6.1
+
+plotly
+Version: 6.6.0
