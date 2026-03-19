@@ -62,14 +62,23 @@ except Exception as e:
 # ===================================
 # Head
 # ===================================
+h1, h2 = st.columns([2, 1])
+with h1:
+    st.title("Titanic Survival Dashboard")
+    st.markdown("""
+    This app performs simple exploratory analysis and survival prediction using the classic Kaggle dataset.
+    * **Python libraries:** plotly, pandas, numpy, streamlit
+    * **Data source:** [Titanic - Machine Learning from Disaster](https://www.kaggle.com/competitions/titanic/).
+    """)
 
-st.title("Titanic Survival Dashboard")
-st.markdown("""
-This app performs simple exploratory analysis and survival prediction using the classic Kaggle dataset.
-* **Python libraries:** plotly, pandas, numpy, streamlit
-* **Data source:** [Titanic - Machine Learning from Disaster](https://www.kaggle.com/competitions/titanic/).
-""")
-# st.divider()
+with h2:
+    st.space()
+    st.image(
+        "gm_generated_image-titanic.png",
+        use_container_width=False,
+        caption="RMS Titanic, 1912",
+        width=400
+    )
 
 # ===================================
 # SideBar
