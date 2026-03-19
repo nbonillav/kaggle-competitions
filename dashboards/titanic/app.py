@@ -146,8 +146,8 @@ if DATA_OK:
     # ===================================
     st.header("Distributions")
     c1, c2 = st.columns(2)
-    no_color = '#6C9BBF'
-    yes_color = '#9BC4E5' #'#1A4C78'
+    no_color = '#4B7CA3'
+    yes_color = '#9BC4E5
 
     # Survival by Sex
     surv_sex = (
