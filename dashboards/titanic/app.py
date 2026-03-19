@@ -74,7 +74,7 @@ with h1:
 with h2:
     st.space()
     st.image(
-        "gm_generated_image-titanic.png",
+        BASE_DIR / "gm_generated_image-titanic.png",
         use_container_width=False,
         caption="RMS Titanic, 1912",
         width=400
