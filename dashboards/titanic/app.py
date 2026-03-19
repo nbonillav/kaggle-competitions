@@ -4,8 +4,7 @@ import numpy as np
 import pickle
 import plotly.express as px
 import plotly.graph_objects as go
-# from sklearn.compose import ColumnTransformer
-# from sklearn.preprocessing import OneHotEncoder, StandardScaler
+from pathlib import Path
 from utils_fn import embarked_imputation, age_imputation, feature_engineer, drop_features, as_category, full_preprocess
 
 
@@ -21,7 +20,8 @@ st.set_page_config(
 # CUSTOM CSS
 # ===================================
 def load_css(path: str):
-    with open(path, encoding="utf-8") as f:
+    css_path = Path(__file__).parent / path
+    with open(css_path, encoding="utf-8") as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 load_css("styles.css")
@@ -29,14 +29,17 @@ load_css("styles.css")
 # ===================================
 # DATA & MODEL LOADERS (cached)
 # ===================================
+BASE_DIR = Path(__file__).parent
+
 @st.cache_data
 def load_train():
-    return pd.read_csv('data/train.csv')
+    return pd.read_csv(BASE_DIR / "data" / "train.csv")
+
 @st.cache_resource
 def load_model():
-    with open('gradient_model.pkl', 'rb') as f:
+    with open(BASE_DIR / "gradient_model.pkl", "rb") as f:
         return pickle.load(f)
- 
+    
 # ===================================
 # LOAD
 # ===================================
