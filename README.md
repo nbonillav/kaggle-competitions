@@ -18,10 +18,10 @@ kaggle-competitions/
 
 > Predict which passengers survived the Titanic shipwreck.
 
-**Approach:** Exploratory data analysis, feature engineering, and comparison
-of 9 classification models (SVC, KNN, Decision Tree, Random Forest,
-Gradient Boosting, AdaBoost, LDA, QDA, Naive Bayes) evaluated with
-10-fold stratified cross-validation. Best model: GradientBoostingClassifier
+**Approach:** Exploratory data analysis, feature engineering, and comparison of 9 classification models (SVC, KNN, Decision Tree, Random Forest, Gradient Boosting, AdaBoost, LDA, QDA, Naive Bayes) evaluated with
+10-fold stratified cross-validation.   
+
+**Best model:** GradientBoostingClassifier
 with ~82% accuracy.
 
 | | |
