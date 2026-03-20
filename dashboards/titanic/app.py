@@ -228,9 +228,9 @@ col_met, col_chart = st.columns(([1, 2]))
 with col_met:
     st.space()
     st.markdown("**Evaluation Metrics** (CV × 10 folds)")
-    st.metric("Accuracy",  "82.7%")
-    st.metric("F1 Macro",  "80.9%")
-    st.metric("Error rate","17.3%")
+    st.metric("Accuracy",  "82.8%")
+    st.metric("F1 Macro",  "81.3%")
+    st.metric("Error rate","17.1%")
     st.caption("Model: GradientBoostingClassifier · lr=0.05 · n=100")
  
 with col_chart:
